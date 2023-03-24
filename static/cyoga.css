@@ -1,0 +1,11 @@
+.cyoga {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2vw;
+}
+
+.cyoga > ol > li > h1 >p {} 
+
+.cyoga ol {}

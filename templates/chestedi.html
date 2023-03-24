@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding-top: 10px;
+            overflow: auto;
+        }
+
+        .navbar li {
+            padding-top: 7px;
+            margin: 10px 5px;
+            list-style: none;
+            float: left;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 3px 10px;
+            color: black;
+        }
+
+        #title1 {
+            font-size: 25px;
+            padding: 3px;
+            padding-left: 100px;
+            padding-right: 0;
+            margin-right: 0;
+            font-weight: bold;
+            color: black;
+        }
+
+        #title2 {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 3px;
+            padding-right: 150px;
+            padding-left: 0;
+            margin-left: 0;
+            color: mediumspringgreen;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+    <script src="exe.js"></script>
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+    <nav-comp></nav-comp>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">CHEST</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">BICEPS</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">SHOULDER</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+        <div id="wiki-outer-body">
+            <div id="wiki-body" class="container">
+                <div class="body">
+                    <div id="mw-content-text">
+                        <div id="heading-outbox">
+                            <div id="heading-leftbox">
+                                <h1>Chest</h1>
+                            </div>
+                            <hr>
+                            <p>
+                                Primarily, there are three chest muscles involved in movement: the pectoralis major, the
+                                pectoralis minor, and the serratus anterior.
+                                Pectoral muscles are most predominantly associated with movement of the shoulders and
+                                arms. When working together, they provide stability for bone structures such as the
+                                clavicle (collar bone) and the scapula (shoulder). Muscles of the chest enable us to
+                                lift, extend, and rotate our arms, along with playing a part in the process of
+                                respiration. Chest muscles are required in order to carry out everyday activities like
+                                moving furniture, lifting heavy objects, pitching a baseball, and stretching our arms.
+
+                            </p>
+                            <h2>
+                                <span class="mw-headline" id="Exercises">
+                                    Featured Exercises
+                                </span>
+                            </h2>
+                            <h3>
+                                <span class="mw-headline" id="Barbell-Bench-Press">
+                                    Barbell Bench Press
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Intermediate</p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=NLDhyIZodR8%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/BenchPress-Front-021316.gif" width="570" height="320"></a>
+                                <a href="https://www.youtube.com/watch?v=52DBC-5SoC0%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/BenchPress-Side-021316.gif" width="570" height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Lay flat on the bench with your feet on the ground. With straight arms unrack the
+                                    bar.</li>
+                                <li>Lower the bar to your mid chest</li>
+                                <li>Raise the bar until you've locked your elbows.</li>
+                            </ol>
+                            <h3>
+                                <span class="mw-headline" id="Dips">
+                                    Dips
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Intermediate</p>
+                            <p>
+                                <a href="https://youtu.be/G4BqAiQ9mHs"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif" width="570"
+                                        height="320"></a>
+                                <a href="https://youtu.be/qFeGkACfl2c"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif" width="570"
+                                        height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Hold your body with arms locked above the equipment</li>
+                                <li>Lower your body slowly while leaning forward, flare out your elbows</li>
+                                <li>Raise your body above the bars until your arms are locked.</li>
+                            </ol>
+                            <h3>
+                                <span class="mw-headline" id="Incline-Barbell-Bench-Press">
+                                    Incline Barbell Bench Press
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Intermediate</p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=AqXJ5dWn7Fk%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/male-incline-barbell-press-side_VFI8X1n.gif" width="570"
+                                        height="320"></a>
+                                <a href="https://www.youtube.com/watch?v=YuL-RaRD4MU%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/male-incline-barbell-press-front_5tlUnQ9.gif" width="570"
+                                        height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Position the bench between 30 and 45 degrees.</li>
+                                <li>Lay flat on the bench with your feet on the ground. With straight arms unrack the
+                                    bar.</li>
+                                <li>Lower the bar to your mid chest</li>
+                                <li>Raise the bar (slowly and controlled) until you've locked your elbows.</li>
+                            </ol>
+                            <h3>
+                                <span class="mw-headline" id="Dumbbell-Flys">
+                                    Dumbbell Flys
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Beginner</p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=kfTgKkZJnIQ%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/Flyes-Front-021316.gif" width="570" height="320"></a>
+                                <a href="https://www.youtube.com/watch?v=q08Z0yXD1_c%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/Flyes-Side-021316.gif" width="570" height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Lay flat on the bench and place your feet on the ground.</li>
+                                <li>Begin the exercise with the dumbbells held together above your chest, elbows
+                                    slightly bent.</li>
+                                <li>Simultaneously lower the weights to either side.</li>
+                                <li>Pause when the weights are parallel to the bench, then raise your arms to the
+                                    starting position.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="Paris" class="tabcontent">
+        <div id="wiki-outer-body">
+            <div id="wiki-body" class="container">
+                <div class="body">
+                    <div id="mw-content-text">
+                        <div id="heading-outbox">
+                            <div id="heading-leftbox">
+                                <h1>Biceps</h1>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <p>
+                        The biceps brachii is one of the most often trained muscles. stereotypically most guys want big
+                        biceps - and in practice, this is often true. As is commonly known, the main function of the
+                        biceps
+                        brachii is elbow flexion (what occurs during a curl exercise). However, the biceps have far more
+                        responsibilities than just curls.
+
+                    </p>
+
+                    <h3>
+                        <span class="mw-headline" id="Barbell-Curl">
+                            Barbell Curl
+                        </span>
+                    </h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=LMdNTHH6G8I%7C"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/Male-Barbell-BicepCurl-Front.gif" width="570" height="320"></a>
+                        <a href="https://www.youtube.com/watch?v=LMdNTHH6G8I%7C"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/Male-Barbell-BicepCurl-side.gif" width="570" height="320"></a>
+                    </p>
+                    <ol class="steps-list">
+                        <li>While holding the upper arms stationary, curl the weights forward while contracting the
+                            biceps
+                            as you breathe out.</li>
+                        <li>Continue the movement until your biceps are fully contracted and the bar is at shoulder
+                            level.
+                        </li>
+                        <li>Hold the contracted position for a second and squeeze the biceps hard.</li>
+                        <li>Slowly bring the weight back down to the starting position.</li>
+                    </ol>
+                    <h3>
+                        <span class="mw-headline" id="Dumbbell-Curl">
+                            Dumbbell Curl
+                        </span>
+                    </h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=jWX_vZXwtZw%7C"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/BicepCurl-Front-021316.gif" width="570" height="320"></a>
+                        <a href="https://www.youtube.com/watch?v=myW3r9AYWwI%7C"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/BicepCurl-Side-021316.gif" width="570" height="320"></a>
+                    </p>
+                    <ol class="steps-list">
+                        <li>Stand up straight with a dumbbell in each hand at arm's length.</li>
+                        <li>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the
+                            shoulder.
+                        </li>
+                        <li>Lower to original position and repeat with opposite arm</li>
+                    </ol>
+                    <h3>
+                        <span class="mw-headline" id="Hammer-Curl">
+                            Hammer Curl
+                        </span>
+                    </h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=mrgLRy5-JJU%7C"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/BicepHC-Front-021316.gif" width="570" height="320"></a>
+                        <a href="https://www.youtube.com/watch?v=x7x7QFg-8EA%7C"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/BicepHC-Side-021316.gif" width="570" height="320"></a>
+                    </p>
+                    <ol class="steps-list">
+                        <li>Hold the dumbbells with a neutral grip (thumbs facing the ceiling).</li>
+                        <li>Slowly lift the dumbbell up to chest height</li>
+                        <li>Return to starting position and repeat.</li>
+                    </ol>
+                    <h3>
+                        <span class="mw-headline" id="Goblet-Curl">
+                            Goblet Curl
+                        </span>
+                    </h3>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p>
+                        <a href="https://youtu.be/oYmItLMNFg0"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/kettlebell-male-goblet-curl-front.gif" width="570" height="320"></a>
+                        <a href="https://youtu.be/vWEvX2_IqaA"><img id="workout-img"
+                                src="https://musclewiki.com/media/uploads/kettlebell-male-goblet-curl-side.gif" width="570" height="320"></a>
+                    </p>
+                    <ol class="steps-list">
+                        <li>Stand up straight with a kettlebell in both hands in front of your pelvis.</li>
+                        <li>Raise the kettlebell bending your arms at the elbow until the kettlebell is level with your
+                            chest.</li>
+                        <li>Lower to the starting position and repeat.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <div id="wiki-outer-body">
+            <div id="wiki-body" class="container">
+                <div class="body">
+                    <div id="mw-content-text">
+                        <div id="heading-outbox">
+                            <div id="heading-leftbox">
+                                <h1>Shoulders</h1>
+
+
+                            </div>
+                            <hr>
+                            <p>
+                                For both men and women, the deltoids, also referred to as delts, are a very desirable
+                                muscle
+                                to build. Well-developed shoulders can give the appearance of a smaller waist (because
+                                the
+                                shoulders look broader). Therefore, well-trained delts improve the look of the entire
+                                physique.
+                                The deltoid has three different heads: anterior (front), lateral (middle), and posterior
+                                (rear). Each head has similar functions, but they do have some variance.
+
+                            </p>
+                            <h2>
+                                <span class="mw-headline" id="Exercises">
+                                    Featured Exercises
+                                </span>
+                            </h2>
+                            <h3>
+                                <span class="mw-headline" id="Barbell-Overhead-Press">
+                                    Barbell Overhead Press
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Advanced</p>
+                            <p>
+                                <a href="https://youtu.be/KUFo-REdBtE"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/barbell-male-overheadpress-side.gif" width="570"
+                                        height="320"></a>
+                                <a href="https://youtu.be/9T6RXC29WDY"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/barbell-male-overheadpress-front.gif" width="570"
+                                        height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Start the barbell across your upper chest below your chin.</li>
+                                <li>Raise the barbell upwards and pause at the contracted position above your head.</li>
+                                <li>Lower the weights back to starting position.</li>
+                            </ol>
+                            <h3>
+                                <span class="mw-headline" id="Seated-Dumbbell-Shoulder-Press">
+                                    Seated Dumbbell Shoulder Press
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Beginner</p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=8HnbEetpoIg%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/ShoulderPress-Front-021316_TPQKWgi.gif" width="570"
+                                        height="320"></a>
+                                <a href="https://www.youtube.com/watch?v=Ndw1hWDhs8w%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/ShoulderPress-Side-021316_N2pSfpL.gif" width="570"
+                                        height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Sit on a bench with back support. Raise the dumbbells to shoulder height with your
+                                    palms
+                                    forward.</li>
+                                <li>Raise the dumbbells upwards and pause at the contracted position.</li>
+                                <li>Lower the weights back to starting position.</li>
+                            </ol>
+                            <h3>
+                                <span class="mw-headline" id="Side-Lateral-Raises">
+                                    Side Lateral Raises
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Beginner</p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=K8oA02MXjXw%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/SideLateralRaise-Front-021316_FIRCTda.gif" width="570"
+                                        height="320"></a>
+                                <a href="https://www.youtube.com/watch?v=pk455HGT0ow%7C"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/SideLateralRaise-Side-021316_dXMKKnp.gif" width="570"
+                                        height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Stand up straight with dumbbells at either side, palms facing your hips.</li>
+                                <li>Raise your arms on either side with a slight bend in your elbow until they are
+                                    parallel
+                                    with the floor. Pause at the top of the motion.</li>
+                                <li>Slowly return your arms down to starting position.</li>
+                            </ol>
+                            <h3>
+                                <span class="mw-headline" id="Front-Raises">
+                                    Front Raises
+                                </span>
+                            </h3>
+                            <p><strong>Difficulty:</strong> Beginner</p>
+                            <p>
+                                <a href="https://youtu.be/pztR18i_F0I"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/dumbbell-male-frontraise-side.gif" width="570"
+                                        height="320"></a>
+                                <a href="https://youtu.be/LSKJWZoPsJA"><img id="workout-img"
+                                        src="https://musclewiki.com/media/uploads/dumbbell-male-frontraise-front.gif" width="570"
+                                        height="320"></a>
+                            </p>
+                            <ol class="steps-list">
+                                <li>Grab two dumbbells while standing upright with the dumbbells at your side.</li>
+                                <li>Raise the two dumbbells with your elbows being fully extended until the dumbbells
+                                    are
+                                    eye level.</li>
+                                <li>Lower the weights in a controlled manner to the starting position and repeat.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Quads" class="tabcontent">
+        
+        
+        </div>
+</body>
+
+</html>

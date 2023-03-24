@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet & Nutrition</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding-top: 10px;
+            overflow: auto;
+        }
+
+        .navbar li {
+            padding-top: 7px;
+            margin: 10px 5px;
+            list-style: none;
+            float: left;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 3px 10px;
+            color: black;
+        }
+
+        #title1 {
+            font-size: 25px;
+            padding: 3px;
+            padding-left: 100px;
+            padding-right: 0;
+            margin-right: 0;
+            font-weight: bold;
+            color: black;
+        }
+
+        #title2 {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 3px;
+            padding-right: 150px;
+            padding-left: 0;
+            margin-left: 0;
+            color: mediumspringgreen;
+        }
+
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+         /* Style the tab */
+         .tab2 {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab2 button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab2 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab2 button.active2 {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent2 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+    <script src="nutri.js"></script>
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+    <nav-comp></nav-comp>
+    <div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'wg')">Weight Gain</button>
+            <button class="tablinks" onclick="openCity(event, 'wl')">Weight Loss</button>
+
+        </div>
+
+        <!-- Tab content -->
+        <div id="wg" class="tabcontent">
+            <h3>Weight Gain</h3>
+            <div class="tab2">
+                <button class="tablinks2" onclick="openCity2(event, 'wgveg')">Veg</button>
+                <button class="tablinks2" onclick="openCity2(event, 'wgnon')">Non-Veg</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="wgveg" class="tabcontent2">
+                <h2>Veg Diet & Nutrition</h2>
+                <h3>Early morning </h3>
+                <div>
+                    <ul>
+                        <li>1 glass of cucumber-infused water on an empty stomach</li>
+                    </ul>
+                </div>
+                <h3>Breakfast</h3>
+                <div>
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>A bowl of oats porridge preferably with skimmed milk and mixed nuts of your choice.</li>
+                        <li>2 wheat bread stuffed with mixed vegetables along with 1 cup of yogurt.</li>
+                        <li> 2 slices of multigrain toast/bowl of peas along with a cup of skimmed milk/yogurt.</li>
+                        <li>A smoothie with nuts, fruit, and yogurt along with any fruit of your choice.</li>
+                        <li>2 idlis with a bowl of sambar.</li>
+                        <li>You can have two besan chilla and green garlic chutney.</li>
+                    </ul>
+                </div>
+                <h3>Lunch</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>2 wheat bread with lentils and mixed vegetable curry.</li>
+                        <li>Half a bowl of brown rice along with a vegetable lentil curry of choice.</li>
+                        <li>A bowl of vegetables along with paneer curry and green chutney.</li>
+                        <li>Eat one vegetable or leafy green stuffed wheat bread with <br>
+                            low-fat paneer curry and dal or A bowl of steamed brown <br>
+                            rice and spinach for lunch.</li>
+                    </ul>
+                </div>
+                <h3>Dinner</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li> 2 wheat bread with lentils or vegetable curry or steamed leafy vegetables.</li>
+                        <li>Half a bowl of leafy greens with rice and 1 cup of lentil curry of your choice.</li>
+                        <li>Half a bowl of steamed brown rice and 1 cup of Chickpea curry.</li>
+                        <li>A cup of lentils with one wheat bread and little vegetables.</li>
+                        <li>Low-fat paneer curry and one vegetable or leafy green stuffed wheat bread.</li>
+                    </ul>
+                </div>
+                <h3>Fillers</h3>
+                <div>
+
+                    <ul>
+                        <li>In between fillers (if hungry) for all seven days include skimmed milk paneer (100 gm), one
+                            bowl of
+                            salad, 1 cup of seasonal fruits, and a glass of buttermilk, or a cup of tea with less milk
+                            and jaggery.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div id="wgnon" class="tabcontent2">
+                <h2>Non-Veg Diet & Nutrition</h2>
+                <h3>Early morning </h3>
+                <div>
+                    <ul>
+                        <li>1 glass of cucumber-infused water on an empty stomach</li>
+                    </ul>
+                </div>
+                <h3>Breakfast</h3>
+                <div>
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>A bowl of oats porridge preferably with skimmed milk and mixed nuts of your choice.</li>
+                        <li>2 wheat bread stuffed with mixed vegetables along with 1 cup of yogurt.</li>
+                        <li> 2 slices of multigrain toast/bowl of peas along with a cup of skimmed milk/yogurt.</li>
+                        <li>A smoothie with nuts, fruit, and yogurt along with any fruit of your choice.</li>
+                        <li>2 idlis with a bowl of sambar.</li>
+                        <li>You can have two besan chilla and green garlic chutney.</li>
+                    </ul>
+                </div>
+                <h3>Lunch</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>2 wheat bread with lentils and mixed vegetable curry.</li>
+                        <li>Half a bowl of brown rice along with a vegetable lentil curry of choice.</li>
+                        <li>A bowl of vegetables along with paneer curry and green chutney.</li>
+                        <li>Eat one vegetable or leafy green stuffed wheat bread with <br>
+                            low-fat paneer curry and dal or A bowl of steamed brown <br>
+                            rice and spinach for lunch.</li>
+                    </ul>
+                </div>
+                <h3>Dinner</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li> 2 wheat bread with lentils or vegetable curry or steamed leafy vegetables.</li>
+                        <li>Half a bowl of leafy greens with rice and 1 cup of lentil curry of your choice.</li>
+                        <li>Half a bowl of steamed brown rice and 1 cup of Chickpea curry.</li>
+                        <li>A cup of lentils with one wheat bread and little vegetables.</li>
+                        <li>Low-fat paneer curry and one vegetable or leafy green stuffed wheat bread.</li>
+                    </ul>
+                </div>
+                <h3>Fillers</h3>
+                <div>
+
+                    <ul>
+                        <li>In between fillers (if hungry) for all seven days include skimmed milk paneer (100 gm), one
+                            bowl of
+                            salad, 1 cup of seasonal fruits, and a glass of buttermilk, or a cup of tea with less milk
+                            and jaggery.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="wl" class="tabcontent">
+            <h3>Weight Loss</h3>
+            <div class="tab">
+                <button class="tablinks2" onclick="openCity2(event, 'wlveg')">Veg</button>
+                <button class="tablinks2" onclick="openCity2(event, 'wlnon')">Non-Veg</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="wlveg" class="tabcontent2">
+                <h2>Veg Diet & Nutrition</h2>
+                <h3>Early morning </h3>
+                <div>
+                    <ul>
+                        <li>1 glass of cucumber-infused water on an empty stomach</li>
+                    </ul>
+                </div>
+                <h3>Breakfast</h3>
+                <div>
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>A bowl of oats porridge preferably with skimmed milk and mixed nuts of your choice.</li>
+                        <li>2 wheat bread stuffed with mixed vegetables along with 1 cup of yogurt.</li>
+                        <li> 2 slices of multigrain toast/bowl of peas along with a cup of skimmed milk/yogurt.</li>
+                        <li>A smoothie with nuts, fruit, and yogurt along with any fruit of your choice.</li>
+                        <li>2 idlis with a bowl of sambar.</li>
+                        <li>You can have two besan chilla and green garlic chutney.</li>
+                    </ul>
+                </div>
+                <h3>Lunch</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>2 wheat bread with lentils and mixed vegetable curry.</li>
+                        <li>Half a bowl of brown rice along with a vegetable lentil curry of choice.</li>
+                        <li>A bowl of vegetables along with paneer curry and green chutney.</li>
+                        <li>Eat one vegetable or leafy green stuffed wheat bread with <br>
+                            low-fat paneer curry and dal or A bowl of steamed brown <br>
+                            rice and spinach for lunch.</li>
+                    </ul>
+                </div>
+                <h3>Dinner</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li> 2 wheat bread with lentils or vegetable curry or steamed leafy vegetables.</li>
+                        <li>Half a bowl of leafy greens with rice and 1 cup of lentil curry of your choice.</li>
+                        <li>Half a bowl of steamed brown rice and 1 cup of Chickpea curry.</li>
+                        <li>A cup of lentils with one wheat bread and little vegetables.</li>
+                        <li>Low-fat paneer curry and one vegetable or leafy green stuffed wheat bread.</li>
+                    </ul>
+                </div>
+                <h3>Fillers</h3>
+                <div>
+
+                    <ul>
+                        <li>In between fillers (if hungry) for all seven days include skimmed milk paneer (100 gm), one
+                            bowl of
+                            salad, 1 cup of seasonal fruits, and a glass of buttermilk, or a cup of tea with less milk
+                            and jaggery.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div id="wlnon" class="tabcontent2">
+                <h2>Non-Veg Diet & Nutrition</h2>
+                <h3>Early morning </h3>
+                <div>
+                    <ul>
+                        <li>1 glass of cucumber-infused water on an empty stomach</li>
+                    </ul>
+                </div>
+                <h3>Breakfast</h3>
+                <div>
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>Bowl of sambar with two brown rice idlis.</li>
+                        <li>Low-fat paneer sandwich with mint chutney.</li>
+                        <li>2 chana dal pancakes stuffed with mixed vegetables and a glass of milk/bread.</li>
+                        <li>One boiled egg with a bowl of seasonal fruits or Egg omelette (made from 2 eggs).</li>
+                        <li>Vegetable dal and a glass of milk.</li>
+                        <li>3-4 idlis with sambar.</li>
+                    </ul>
+                </div>
+                <h3>Lunch</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>2 whole-grain bread with a bowl of mixed-vegetable curry and one cup of dal.</li>
+                        <li>A bowl of fish curry with brown rice.</li>
+                        <li>2 whole-grain bread with a bowl of non-veg curry of your choice.</li>
+                        <li>Large bowl of salad with rajma curry and brown rice</li>
+                        <li>One bowl millet and dal khichdi with multigrain bread.</li>
+                    </ul>
+                </div>
+                <h3>Dinner</h3>
+                <div>
+
+                    <p>Choose any meal below as per your choice :</p>
+                    <ul>
+                        <li>Chicken curry with mixed vegetables and a fresh spinach salad.</li>
+                        <li>Chicken gravy with one multigrain bread.</li>
+                        <li>A bowl of khichdi with sprout salad.</li>
+                        <li>Chickpea curry with basmati rice and green salad.</li>
+                        <li>Lentil pancakes with chicken tikka masala.</li>
+                        <li>Chicken curry with 80-100gm boiled sweet potatoes and <br>
+                            mixed vegetables/chicken curry with one multigrain bread.</li>
+                    </ul>
+                </div>
+                <h3>Fillers</h3>
+                <div>
+
+                    <ul>
+                        <li>In between fillers (if hungry) for all seven days include skimmed milk paneer (100 gm), one
+                            bowl of
+                            salad, 1 cup of seasonal fruits, and a glass of buttermilk, or a cup of tea with less milk
+                            and jaggery.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

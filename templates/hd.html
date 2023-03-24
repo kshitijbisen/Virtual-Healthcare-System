@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding-top: 10px;
+            overflow: auto;
+        }
+
+        .navbar li {
+            padding-top: 7px;
+            margin: 10px 5px;
+            list-style: none;
+            float: left;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 3px 10px;
+            color: black;
+        }
+
+        #title1 {
+            font-size: 25px;
+            padding: 3px;
+            padding-left: 100px;
+            padding-right: 0;
+            margin-right: 0;
+            font-weight: bold;
+            color: black;
+        }
+
+        #title2 {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 3px;
+            padding-right: 150px;
+            padding-left: 0;
+            margin-left: 0;
+            color: mediumspringgreen;
+        }
+
+        .box1 {
+            display: flex;
+        }
+
+        .b11 {
+            margin: 20px 0px;
+            padding: 40px;
+            border: 1px solid black;
+        }
+
+        #b1 {
+            margin-left: 5px;
+            margin-right: 44px;
+        }
+
+        #b2 {
+            margin-right: 44px;
+        }
+
+        .box2 {
+            display: flex;
+            width: 705px;
+            margin: 5px;
+            padding: 30px;
+            border: 1px solid black;
+        }
+
+        .box3 {
+            display: flex;
+            width: 705px;
+            margin: 5px;
+            margin-top: 10px;
+            padding: 30px;
+            border: 1px solid black;
+        }
+
+        .box31 {
+            margin-right: 50px;
+        }
+
+        .box32 {
+            margin-left: 120px;
+        }
+
+        .b1 {
+            margin: 10px 0px;
+        }
+
+        .b2 {
+            margin: 10px 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .but1 {
+            margin: 10px;
+        }
+
+        .button1 {
+            width: 80px;
+            background-color: rgb(32, 234, 32);
+            border-radius: 7px;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+
+        .button2 {
+            width: 80px;
+            background-color: rgb(232, 88, 88);
+            border-radius: 7px;
+            font-size: 20px;
+            border: 1px black solid;
+        }
+        .box4 {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .b41 {
+            width: 164px;
+            margin: 10px 0px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #b41 {
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+
+        #b42 {
+            margin-right: 10px;
+        }
+        #b43 {
+            margin-right: 10px;
+        }
+        .heading{
+            margin-left: 600px;
+        }
+    </style>
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+    <nav-comp></nav-comp>
+    <div class="heading">
+    <h1>Heart Disease Prediction</h1>
+    </div>
+    <div class="container">
+        
+        <form method="POST" , action="/predict2">
+            <div class="box1">
+                <div class="b11" id="b1">
+                    <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gender:</span><br>
+                    <input type="radio" id="female" name="Sex" value="0">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="Sex" value="1">
+                    <label for="male">Male</label>
+                </div>
+                <div class="b11" id="b2">
+                    <span> &nbsp;&nbsp;&nbsp; Exercise Angina :</span><br>
+                    <input type="radio" id="yes" name="ExerciseAngina" value="1">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="ExerciseAngina" value="0">
+                    <label for="no">No</label>
+                </div>
+                <div class="b11" id="b3">
+                    <label for="Age">AGE </label>
+                    <br>
+                    <input type="number" name="Age" id="Age">
+                </div>
+            </div>
+            <div class="box2">
+                <span>Would you say about Chest Pain Type :&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span> <br>
+                <input type="radio" id="asp" name="ChestPainType" value="0">
+                <label for="asp">ASP &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp</label>
+                <input type="radio" id="ata" name="ChestPainType" value="1">
+                <label for="ata">ATA &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+                <input type="radio" id="nap" name="ChestPainType" value="2">
+                <label for="nap">NAP &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+                <input type="radio" id="ta" name="ChestPainType" value="3">
+                <label for="ta">TA &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+            </div>
+            <div class="box3">
+                <div class="box31">
+                    <div class="b1">
+                        <span>Fasting Blood Sugar ?</span>
+                    </div>
+                    <div class="b1">
+                        <span>Resting ECG ?</span>
+                    </div>
+                    <div class="b1">
+                        <span>ST Slope ?</span>
+                    </div>
+                </div>
+                    <div class="box32">
+
+                        <div class="b2">
+                            <input type="radio" id="yes" name="FastingBS" value="1">
+                            <label for="yes">Yes &nbsp &nbsp</label>
+                            <input type="radio" id="no" name="FastingBS" value="0">
+                            <label for="no">No</label>
+                        </div>
+    
+                        <div class="b2">
+                            <input type="radio" id="LVH" name="RestingECG" value="0">
+                            <label for="LVH">LVH &nbsp</label>
+                            <input type="radio" id="Normal" name="RestingECG" value="1">
+                            <label for="Normal">Normal</label>
+                            <input type="radio" id="ST" name="RestingECG" value="2">
+                            <label for="ST">ST</label>
+                        </div>
+        
+                        <div class="b2">
+                            <input type="radio" id="down" name="ST_Slope" value="0">
+                            <label for="down">Down</label>
+                            <input type="radio" id="flat" name="ST_Slope" value="1">
+                            <label for="flat">Flat &nbsp &nbsp &nbsp</label>
+                            <input type="radio" id="up" name="ST_Slope" value="2">
+                            <label for="up">Up</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="box4">
+                    <div class="b41" id="b41">
+                        <label for="RestingBP">Resting Blood Pressure </label>
+                        <br>
+                        <input type="number" name="RestingBP" id="RestingBP">
+                    </div>
+                    <div class="b41" id="b42">
+                        <label for="Cholesterol">Cholesterol</label>
+                        <br>
+                        <input type="number" name="Cholesterol" id="Cholesterol">
+                    </div>
+                    <div class="b41" id="b43">
+                        <label for="MaxHR">MaxHR</label>
+                        <br>
+                        <input type="number" name="MaxHR" id="MaxHR">
+                    </div>
+                    <div class="b41" id="b44">
+                        <label for="Oldpeak">Oldpeak</label>
+                        <br>
+                        <input type="number" name="Oldpeak" id="Oldpeak">
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="button">
+                <div class="but1" id="but3">
+                    <input type="submit" value="Predict" class="button1">
+                </div>
+                <div class="but1" id="but4">
+                    <input type="reset" value="Reset" class="button2">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

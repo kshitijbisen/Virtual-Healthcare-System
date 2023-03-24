@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        .box2{
+            width:fit-content
+        }
+        .box2 h1{
+            background-color: greenyellow;
+        }
+    </style>
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+    <nav-comp></nav-comp>
+    <div class="box1">
+        <div class="box2">
+    {%if data==0}
+    <h1>YOU DO NOT HAVE HEART DISEASE</h1>
+ 
+    {%elif data==1.0%}
+    <h1>YOU HAVE HEART DISEASE</h1>
+
+    {%endif%}
+      <br><br>
+    <a href="/">Click here to go back</a>
+</div>
+</div>
+    <!-- {%if data == 0%}
+    <h1>Iris-setosa</h1>  
+    <img src='static\setosa.jpg'>  
+
+    {%else%}
+    <h1>Iris-versicolor</h1>
+    <img src='static\verci.jpg'>
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center> -->
+    
+</body>
+</html>
